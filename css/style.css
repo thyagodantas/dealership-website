@@ -1,8 +1,12 @@
+/* FONT IMPORT*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+/**/
 /* Reset page and congi page*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
 }
 
 .clear {
@@ -20,4 +24,187 @@ body {
   height: 100%;
 }
 
+/**/
+/* HEADER */
+header {
+  padding: 20px 2% 35px 2%;
+  height: 130px;
+}
+header div.logo {
+  float: left;
+}
+header nav.desktop {
+  float: right;
+  position: relative;
+  top: 40px;
+}
+header nav.desktop ul {
+  list-style-type: none;
+}
+header nav.desktop ul li {
+  float: left;
+  font-size: 23px;
+  padding: 0 20px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+header nav.desktop ul li a {
+  color: black;
+  text-decoration: none;
+}
+header nav.mobile {
+  margin-top: 35px;
+  float: right;
+  display: none;
+  width: 32px;
+  height: 32px;
+  background-image: url(../images/icon_menu.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+header nav.mobile ul {
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 105px;
+  z-index: 999;
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  border-bottom: 4px solid #eb2d2d;
+}
+header nav.mobile ul li {
+  font-size: 23px;
+  padding: 20px 0;
+}
+header nav.mobile ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+/**/
+/* BANNER */
+section.banner {
+  overflow: hidden;
+  width: 100%;
+  height: 650px;
+  background-color: black;
+  background-image: url(../images/bg.jpg);
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+section.banner .text-banner {
+  padding: 70px;
+}
+section.banner .text-banner .text-banner-single {
+  width: 314px;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 50px;
+  color: white;
+  font-size: 23px;
+  margin-top: 30px;
+  font-style: italic;
+  text-transform: uppercase;
+  background-image: url(../images/box-text.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+section.banner .text-banner .text-banner-single:nth-of-type(2) {
+  width: 200px;
+  height: 70px;
+  line-height: 70px;
+  position: relative;
+  left: -10px;
+}
+section.banner .text-banner .text-banner-single:nth-of-type(3) {
+  width: 170px;
+  height: 70px;
+  line-height: 70px;
+  position: relative;
+  left: -20px;
+}
+section.banner .text-banner .text-banner-single:nth-of-type(4) {
+  width: 320px;
+  font-size: 18px;
+  color: black;
+  position: relative;
+  padding: 0 20px;
+  left: -30px;
+  line-height: 70px;
+  background-image: url(../images/box-white-text.png);
+}
+
+/**/
+/* VEHICLE SECTION */
+section.featured-vehicle {
+  padding: 90px 2%;
+}
+section.featured-vehicle .line-title {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+section.featured-vehicle .line-title h2 {
+  position: relative;
+  padding: 0 20px;
+  background-color: white;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 27px;
+  font-style: italic;
+}
+section.featured-vehicle .line-title .ln1 {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 20px;
+  background-color: black;
+}
+
+/**/
+/* MEDIA QUERYS */
+@media screen and (max-width: 1400px) {
+  section.banner {
+    background-size: 90% auto;
+    background-position: 200% 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section.banner {
+    background-size: cover;
+    background-position: center;
+    height: 70vw;
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: 912px) {
+  header nav.desktop {
+    display: none;
+  }
+  header nav.mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  section.banner {
+    background-size: cover;
+    background-position: 100px center;
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 580px) {
+  section.banner .text-banner {
+    padding: 30px;
+  }
+  section.banner .text-banner .text-banner-single {
+    width: 240px;
+    font-size: 18px;
+  }
+  section.banner .text-banner .text-banner-single:nth-of-type(4) {
+    width: 270px;
+  }
+}
 /**//*# sourceMappingURL=style.css.map */
