@@ -2,6 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 /**/
 
+/* GLOBAL CLASS BUTTON */
+.btn-one {
+  text-align: center;
+  display: block;
+  line-height: 40px;
+  background-color: #eb2d2d;
+  text-decoration: none;
+  width: 150px;
+  font-size: 16px;
+  color: white;
+  font-style: italic;
+  border-bottom: 3px solid #b21e1e;
+}
+/**/
+
 /* Reset page and congi page*/
 * {
   margin: 0;
@@ -212,13 +227,13 @@ section.featured-vehicle {
         font-style: italic;
       }
 
-      & a {
+      & .btn-one {
         margin-top: 10px;
         margin-left: 8px;
         color: white;
         font-style: italic;
         width: 150px;
-        display: block;
+        display: inline-block;
         text-align: center;
         line-height: 40px;
         background-color: #eb2d2d;
@@ -228,6 +243,96 @@ section.featured-vehicle {
     }
   }
 }
+/**/
+
+/* SERVICES AND DEPOSITIONS */
+
+section.services-description {
+  display: flex;
+  & .half-one {
+    width: 50%;
+    text-align: right;
+    padding: 90px 0;
+    background-color: #242424;
+    color: white;
+
+    & .half-one-wraper {
+      display: inline-block;
+      text-align: left;
+      padding: 0 100px 0 20px;
+
+      & h2 {
+        font-size: 35px;
+        font-weight: normal;
+        font-style: italic;
+      }
+
+      & ul {
+        display: inline-block;
+        margin-top: 20px;
+
+        & li {
+          margin-left: 15px;
+        }
+      }
+
+      & .btn-one {
+        width: 90px;
+        height: 40px;
+      }
+
+      & a {
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  & .half-two {
+    width: 50%;
+    padding: 90px 100px;
+    background-color: #eb2d2d;
+    color: white;
+
+    & h2 {
+      font-size: 35px;
+      font-weight: normal;
+      font-style: italic;
+    }
+
+    & .half-two-depositions-single {
+      margin-top: 19px;
+
+      & p {
+        font-size: 20px;
+      }
+
+      & .navigation {
+        float: left;
+        margin-top: 30px;
+        width: 100%;
+        max-width: 700px;
+
+        & .arrows {
+          float: left;
+        }
+
+        & img {
+          cursor: pointer;
+          margin: 0 20px 0 1px;
+        }
+
+        & .deposition-author {
+          float: right;
+          margin-top: 2px;
+          font-size: 18px;
+          color: #252525;
+        }
+      }
+    }
+  }
+}
+
 /**/
 
 /* MEDIA QUERYS */
@@ -260,11 +365,53 @@ section.featured-vehicle {
   }
 }
 
+@media screen and (max-width: 866px) {
+  section.services-description {
+    & .half-one {
+      text-align: center;
+
+      & .half-one-wraper {
+        text-align: left;
+        padding-right: 0;
+
+        & a {
+          display: block;
+          margin-left: 0;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   section.banner {
     background-size: cover;
     background-position: 100px center;
     height: 80vh;
+  }
+
+  section.services-description {
+    flex-direction: column;
+    & .half-one,
+    .half-two {
+      width: 100%;
+      padding: 90px 100px;
+    }
+
+    & .half-one {
+      text-align: center;
+
+      & .half-one-wraper {
+        padding-right: 0;
+        & .btn-one {
+          margin-left: 0;
+          margin-top: 20px;
+          width: 150px;
+          display: block;
+        }
+      }
+    }
   }
 }
 

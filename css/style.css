@@ -1,6 +1,21 @@
 /* FONT IMPORT*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 /**/
+/* GLOBAL CLASS BUTTON */
+.btn-one {
+  text-align: center;
+  display: block;
+  line-height: 40px;
+  background-color: #eb2d2d;
+  text-decoration: none;
+  width: 150px;
+  font-size: 16px;
+  color: white;
+  font-style: italic;
+  border-bottom: 3px solid #b21e1e;
+}
+
+/**/
 /* Reset page and congi page*/
 * {
   margin: 0;
@@ -191,18 +206,92 @@ section.featured-vehicle .container .featured-showcase p {
   font-size: 15px;
   font-style: italic;
 }
-section.featured-vehicle .container .featured-showcase a {
+section.featured-vehicle .container .featured-showcase .btn-one {
   margin-top: 10px;
   margin-left: 8px;
   color: white;
   font-style: italic;
   width: 150px;
-  display: block;
+  display: inline-block;
   text-align: center;
   line-height: 40px;
   background-color: #eb2d2d;
   text-decoration: none;
   border-bottom: 3px solid #b21e1e;
+}
+
+/**/
+/* SERVICES AND DEPOSITIONS */
+section.services-description {
+  display: flex;
+}
+section.services-description .half-one {
+  width: 50%;
+  text-align: right;
+  padding: 90px 0;
+  background-color: #242424;
+  color: white;
+}
+section.services-description .half-one .half-one-wraper {
+  display: inline-block;
+  text-align: left;
+  padding: 0 100px 0 20px;
+}
+section.services-description .half-one .half-one-wraper h2 {
+  font-size: 35px;
+  font-weight: normal;
+  font-style: italic;
+}
+section.services-description .half-one .half-one-wraper ul {
+  display: inline-block;
+  margin-top: 20px;
+}
+section.services-description .half-one .half-one-wraper ul li {
+  margin-left: 15px;
+}
+section.services-description .half-one .half-one-wraper .btn-one {
+  width: 90px;
+  height: 40px;
+}
+section.services-description .half-one .half-one-wraper a {
+  display: inline-block;
+  margin-left: 20px;
+}
+section.services-description .half-two {
+  width: 50%;
+  padding: 90px 100px;
+  background-color: #eb2d2d;
+  color: white;
+}
+section.services-description .half-two h2 {
+  font-size: 35px;
+  font-weight: normal;
+  font-style: italic;
+}
+section.services-description .half-two .half-two-depositions-single {
+  margin-top: 19px;
+}
+section.services-description .half-two .half-two-depositions-single p {
+  font-size: 20px;
+}
+section.services-description .half-two .half-two-depositions-single .navigation {
+  float: left;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 700px;
+}
+section.services-description .half-two .half-two-depositions-single .navigation .arrows {
+  float: left;
+}
+section.services-description .half-two .half-two-depositions-single .navigation img {
+  cursor: pointer;
+  margin: 0 20px 0 1px;
+}
+section.services-description .half-two .half-two-depositions-single .navigation .deposition-author {
+  float: right;
+  margin-top: 2px;
+  font-size: 18px;
+  color: #252525;
 }
 
 /**/
@@ -229,11 +318,45 @@ section.featured-vehicle .container .featured-showcase a {
     display: block;
   }
 }
+@media screen and (max-width: 866px) {
+  section.services-description .half-one {
+    text-align: center;
+  }
+  section.services-description .half-one .half-one-wraper {
+    text-align: left;
+    padding-right: 0;
+  }
+  section.services-description .half-one .half-one-wraper a {
+    display: block;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   section.banner {
     background-size: cover;
     background-position: 100px center;
     height: 80vh;
+  }
+  section.services-description {
+    flex-direction: column;
+  }
+  section.services-description .half-one,
+section.services-description .half-two {
+    width: 100%;
+    padding: 90px 100px;
+  }
+  section.services-description .half-one {
+    text-align: center;
+  }
+  section.services-description .half-one .half-one-wraper {
+    padding-right: 0;
+  }
+  section.services-description .half-one .half-one-wraper .btn-one {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 150px;
+    display: block;
   }
 }
 @media screen and (max-width: 736px) {
