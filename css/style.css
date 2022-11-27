@@ -288,6 +288,7 @@ section.services-description .half-two .half-two-depositions-single .navigation 
 }
 section.services-description .half-two .half-two-depositions-single .navigation .deposition-author {
   float: right;
+  margin-top: 2px;
   font-size: 18px;
   color: #252525;
 }
@@ -502,6 +503,18 @@ section.services-description .half-two {
 @media screen and (max-width: 480px) {
   section.featured-vehicle .container .featured-showcase {
     width: 100%;
+  }
+}
+@media screen and (max-width: 362px) {
+  section.services-description .half-two .half-two-depositions-single .navigation .deposition-author {
+    margin-top: 1px;
+  }
+  section.services-description .half-two .half-two-depositions-single .navigation img {
+    cursor: pointer;
+    margin: 0 5px 0 2px;
+  }
+  footer p {
+    font-size: 15px;
   }
 }
 /**//*# sourceMappingURL=style.css.map */

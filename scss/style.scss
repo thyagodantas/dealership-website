@@ -322,6 +322,7 @@ section.services-description {
 
         & .deposition-author {
           float: right;
+          margin-top: 2px;
           font-size: 18px;
           color: #252525;
         }
@@ -596,6 +597,31 @@ footer {
       & .featured-showcase {
         width: 100%;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 362px) {
+  section.services-description {
+    & .half-two {
+      & .half-two-depositions-single {
+        & .navigation {
+          & .deposition-author {
+            margin-top: 1px;
+          }
+
+          & img {
+            cursor: pointer;
+            margin: 0 5px 0 2px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    & p {
+      font-size: 15px;
     }
   }
 }
