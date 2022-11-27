@@ -14,7 +14,7 @@
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
@@ -142,7 +142,7 @@ section.featured-vehicle {
   padding: 90px 2%;
 }
 section.featured-vehicle .line-title {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
   text-align: center;
@@ -162,6 +162,47 @@ section.featured-vehicle .line-title .ln1 {
   height: 1px;
   top: 20px;
   background-color: black;
+}
+section.featured-vehicle .container {
+  max-width: 1000px;
+  padding: 40px 0;
+  text-align: left;
+}
+section.featured-vehicle .container .featured-showcase {
+  float: left;
+  width: 33.3%;
+}
+section.featured-vehicle .container .featured-showcase .img-car {
+  width: 100%;
+  padding-top: 100%;
+  background-size: 100% 100%;
+  border: 8px solid white;
+}
+section.featured-vehicle .container .featured-showcase h2 {
+  padding-left: 8px;
+  color: black;
+  font-style: italic;
+  font-size: 20px;
+}
+section.featured-vehicle .container .featured-showcase p {
+  padding-left: 8px;
+  padding-top: 8px;
+  color: #353535;
+  font-size: 15px;
+  font-style: italic;
+}
+section.featured-vehicle .container .featured-showcase a {
+  margin-top: 10px;
+  margin-left: 8px;
+  color: white;
+  font-style: italic;
+  width: 150px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  background-color: #eb2d2d;
+  text-decoration: none;
+  border-bottom: 3px solid #b21e1e;
 }
 
 /**/
@@ -195,6 +236,20 @@ section.featured-vehicle .line-title .ln1 {
     height: 80vh;
   }
 }
+@media screen and (max-width: 736px) {
+  section.featured-vehicle .container {
+    text-align: center;
+  }
+  section.featured-vehicle .container .featured-showcase {
+    display: inline-block;
+    margin-top: 20px;
+    float: none;
+    width: 70%;
+  }
+  section.featured-vehicle .container .featured-showcase a {
+    display: inline-block;
+  }
+}
 @media screen and (max-width: 580px) {
   section.banner .text-banner {
     padding: 30px;
@@ -204,7 +259,16 @@ section.featured-vehicle .line-title .ln1 {
     font-size: 18px;
   }
   section.banner .text-banner .text-banner-single:nth-of-type(4) {
+    font-size: 15px;
     width: 270px;
+  }
+  section.featured-vehicle .line-title h2 {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 480px) {
+  section.featured-vehicle .container .featured-showcase {
+    width: 100%;
   }
 }
 /**//*# sourceMappingURL=style.css.map */
